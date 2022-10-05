@@ -1,4 +1,11 @@
 #!/usr/bin/env python
+"""
+Example usage:
+
+python combine_tables.py mri_table.csv \
+                         -i /data/abcd/Package_1204615/abcd_{lt01,mri01,ra01}.txt \
+                         -j interview_date subjectkey interview_age
+"""
 
 from argparse import ArgumentParser
 import pandas as pd
